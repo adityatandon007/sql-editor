@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="text-gray-900 dark:text-gray-50 bg-white dark:bg-bgDark">
+    <div class="w-full flex justify-between items-center px-8 py-4">
+      <div class="text-xl font-bold text-gray-900 dark:text-hotGreen">SQL Editor</div>
+      <theme-button />
+    </div>
+    <div class="home-view">
+      <home-view />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ThemeButton from '@/components/ThemeButton.vue'
+import HomeView from '@/components/HomeView.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { ThemeButton, HomeView },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 </style>
