@@ -7,7 +7,8 @@
           </h3>
 
           <div class="flex flex-col gap-4 mb-4">
-            <Codemirror 
+            <Codemirror
+              aria-label="sql-code-editor" 
               v-model="query"
               :style="{ height: '100px' }"
               :autofocus="true"
